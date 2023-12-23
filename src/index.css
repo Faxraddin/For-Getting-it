@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300&family=Montserrat:wght@300&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    font-family: 'Kalam', cursive;
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+};
+
+.Card{
+  animation: floatAnimation 3s infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px); 
+  }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.navabarAnmation {
+  animation: NA 0.5s ease-in-out ;
+}
+
+@keyframes NA {
+  from {
+    opacity: 0;
+  }
+
+  to{
+    opacity: 1;
+  }
+}
+
+.trans {
+  transition: opacity 0.3s;
+}
+
+.trans:hover {
+  opacity: 0.5; 
+}
+
+.herr {
+  transition: opacity 0.2s ease-linear;
+}
+.herr:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s ease-linear;
+  }
